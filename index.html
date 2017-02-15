@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Padlock.io decrypt</title>
+        <meta charset="UTF-8">
+        
+        <script type="text/javascript" src="sjcl.js"></script>
+        <script type="text/javascript" src="crypto.js"></script>
+        <script type="text/javascript" src="app.js"></script>            
+    </head>
+    <body>
+        <p>
+            <label>Passcode</label>
+            <br />
+            <input type="password" style="width: 400px;" id="passcode" />
+        </p>
+        <p>
+            <label>Json to decrypto</label>
+            <br />
+            <textarea id="jsonToDecrypt" style="width: 400px; height: 300px;">{"cipher":"AES","mode":"ccm","iv":"sUOsPn9FG1GAlXxi2YdQWg==","salt":"xvC5pH4QkA26NYhFeM9ToQ==","keySize":256,"iter":10000,"ct":"HG4nszxbfow8Rs5VzJZwMrqOEumgJeEYPFfcV0qq9QHBSG+7BZ7iNDF4Dw3YEcyA6hbBwRt/M+i0CVwnS2ZUt2ntZoEr4UXw6xKJpbLFZH/I4xL6qvMVWOb17edaOfFDCmmIChqYH434BOCZFUvLAD1O2s8YrQC19Z6grzFMWKl4scGwpk60roSaxGIvMGsBY2z9dIGA7MPDLxZ10RJN6QIkLumJmoL3ONVcQh4MR2NvRGDP6YCY68ZWfkr5sayFp/vJ6RRX2hLPOG9XZFCQvZkBEv1d0ziE7xNpJ6X0cAs9bnKX37qonjsokcfcABpDr4+c8uktXAbTI+3PFSeFO0GFvrOVCI5oYvQJodEn5Yy68aBXHGWz4fOI+WFZB5shtjZX/awdz00QYbQE3Y96M3p1joe3CtHcXXeDrXm+sTaKdLZVlxQpo3U1zsGvvH9ARt/WeAbJtrJ3O6r25qzbEKiDG1hwOpbsfORVTf9w/3UQMNhwEl9EOynaAQ/8xh1gdD36osSuORQBHGvRFItGZdOToizFQYIWNqZXeRgo4rclGJf11/eF/jyMoXqQAYklEER97Wbqyfp+ChFAZvvyoCdqyScYvOai6lZu+QkpR2GylzWi//rMXa0rJ5zgjZzyeUth6wT96Pb9wtMIeQlN6Q1oohNOTY79lms4cLLfOe+xReH0SRCVytpTp+yYrTNljiWhxSvjNyNMAj8FR/I=","adata":"WIHX/8mJaUrt+x11IJFY3w==","ts":64}</textarea>
+            <br />
+            <input type="button" onclick="decrypto();" value="Go go, lets decrypto!"></input>
+        </p>
+        <p>
+            <label>Result</label>
+            <br />
+            <textarea id="result" style="width: 400px; height: 300px;"></textarea>
+        </p>
+    </body>
+</html>
